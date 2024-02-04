@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: spring-boot-demo-app
-  name: spring-boot-demo-app
+    app: inventory-service-app
+  name: inventory-service-app
   namespace: spring-boot-namespace
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: spring-boot-demo-app
+      app: inventory-service-app
   template:
     metadata:
       labels:
-        app: spring-boot-demo-app
+        app: inventory-service-app
     spec:
       containers:
-      - image: abushan/spring-boot-demo
-        name: spring-boot-demo
+      - image: abushan/inventoryservice
+        name: inventoryservice
         ports:
         - containerPort: 8080
           protocol: TCP

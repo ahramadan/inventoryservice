@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: inventory-service-app
+  name: inventory-service-application
   namespace: argocd
 spec:
   project: default
