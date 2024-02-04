@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/ahramadan/inventory-service.git
+    repoURL: https://github.com/ahramadan/inventoryservice.git
     targetRevision: HEAD
     path: kube
   destination:
